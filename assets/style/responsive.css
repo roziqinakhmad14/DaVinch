@@ -1,0 +1,116 @@
+@media (max-width: 1280px) {
+  .top-wrapper-text {
+    padding: 100px 20px;
+  }
+  .top-wrapper img {
+    height: 400px;
+    margin: 60px 36px 60px 0;
+  }
+  #lessons img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 2%;
+  }
+  .nav-btn, .top-wrapper-text, .top-wrapper img, #about_us,
+  .content-text, #lessons figure {
+    float: none;
+  }
+  .bg-image {
+    top: 1100px;
+  }
+  header .container {
+    padding: 0 20px;
+  }
+  .header-left {
+    padding: 10px 10px 0;
+  }
+  .header-left img {
+    height: 24px;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: #222831b4;
+  }
+  .nav-btn {
+    line-height: 65px;
+    text-align: right;
+    padding: 0 10px;
+    animation-name: slidedown;
+    animation-duration: 0.5s;
+  }
+  .nav-btn:active, .nav-btn-text:active {
+    background-color: #222831;
+  }
+  .nav-btn-text {
+    margin: 0;
+  }
+  .nav-btn-text:hover {
+    border-bottom: unset;
+  }
+  .signin {
+    margin: 0;
+    padding: 0 10px;
+    color: #eee;
+    font-weight: 400;
+    background-color: unset;
+  }
+  .signin:hover {
+    color: unset;
+    background-color: unset;
+  }
+  .bar-icon {
+    display: inline-block;
+    padding: 5px 10px 0;
+  }
+  .bar-icon:active {
+    color: #ffd369;
+  }
+  .top-wrapper {
+    padding-top: 100px;
+  }
+  .top-wrapper-text {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .top-wrapper img {
+    height: 500px;
+    margin: 0 0 80px;
+  }
+  .content-text, .content-text p, blockquote {
+    width: 100%;
+  }
+  .content-text {
+    text-align: center;
+  }
+  #about_us {
+    width: 100%;
+  }
+  aside[class='container'] {
+    display: block;
+    color: #222831;
+    padding-top: 60px;
+    font-size: 1.2em;
+  }
+  aside {
+    display: none;
+  }
+  #lessons img {
+    height: 400px;
+  }
+  .lesson>figure {
+    display: none;
+  }
+  .content-text figure {
+    display: block;
+  }
+  .flexbox-container {
+    flex-direction: column;
+  }
+}

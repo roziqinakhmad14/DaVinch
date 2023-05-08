@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - DaVinch Indonesia</title>
+    <link rel="icon" href="assets/image/DaVinch_logo.png">
+    <link rel="stylesheet" href="assets/style/signup_style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html"><img src="assets/image/DaVinch_logo.png" alt="DaVinch"></a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form action="" class="card">
+          <table>
+            <tr>
+              <th><label for="username">Username</label></th>
+              <td>:</td>
+              <td><input name="username" id="username" type="text" placeholder="Username" required></td>
+            </tr>
+            <tr>
+              <th><label for="fullname">Nama lengkap</label></th>
+              <td>:</td>
+              <td><input name="fullname" id="fullname" type="text" placeholder="Nama lengkap" required></td>
+            </tr>
+            <tr>
+              <th><label for="email">Email</label></th>
+              <td>:</td>
+              <td><input name="email" id="email" type="email" placeholder="emailaddress@gmail.com" autocomplete="email" required></td>
+            </tr>
+            <tr>
+              <th><label for="phone">Nomor Telepon</label></th>
+              <td>:</td>
+              <td><input name="phone" id="phone" type="tel" placeholder="08xx - xxxx - xxxx" autocomplete="mobile" required></td>
+            </tr>
+            <tr>
+              <th><label for="address">Alamat</label></th>
+              <td>:</td>
+              <td><textarea name="address" id="address" placeholder="Jl. Raya No. xx" cols="30" rows="2" required></textarea></td>
+            </tr>
+            <tr>
+              <th><label for="password">Password</label></th>
+              <td>:</td>
+              <td><input id="password" name="password" type="password"  minlength="8" required></td>
+            </tr>
+            <tr>
+              <th><label for="packageChoosed">Pilih pelajaran</label></th>
+              <td>:</td>
+              <td>
+                <select name="packageChoosed" id="packageChoosed" required>
+                  <option value="Bronze">Bronze (3 bulan/ Rp.400.000)</option>
+                  <option value="Silver">Silver (6 bulan/ Rp.600.000)</option>
+                  <option value="Gold">Gold (1 tahun/ Rp.1.000.000)</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <input id="signup" type="submit" value="Daftar">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Copyright 2021 &copy; DaVinch Indonesia</p>
+      </div>
+    </footer>
+    <script src="assets/js/signup.js"></script>
+  </body>
+</html>

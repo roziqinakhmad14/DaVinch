@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Belleza', sans-serif !important;
+  font-size: 1em;
+  color: #222831;
+  background-color: #222831;
+}
+.container {
+  padding: 0 5%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1360px;
+  width: 100%;
+}
+header, footer {
+  color: #eee;
+  overflow: auto;
+}
+header img {
+  height: 75px;
+  margin: 30px;
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+  border: 3px solid #222831;
+  border-radius: 14px;
+}
+table {
+  margin: 0 auto;
+  padding: 10px;
+  width: 70%;
+}
+tr {
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+}
+input, textarea, select {
+  padding: 5px;
+  border: 1px solid #222831;
+  border-radius: 4px;
+  width: 100%;
+}
+input[type="submit"] {
+  font-weight: 600;
+  color: #222831;
+  width: fit-content;
+  margin-bottom: 15px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffd369;
+}
+input[type="submit"]:hover {
+  background-color: #ffcb50;
+}
+textarea {
+  font-size: 1em;
+  font-family: 'Belleza', sans-serif;
+}
+footer {
+  position: fixed;  
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  line-height: 70px;
+}
+
+@media (max-width: 800px) {
+  header img {
+    margin: 50px;
+  }
+  form {
+    width: 90%;
+  }
+}
