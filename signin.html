@@ -47,20 +47,20 @@
     </footer>
     <script src="assets/js/signin.js"></script>
     <script>
-      // function get_action(form) 
-      // {
-      //     var v = grecaptcha.getResponse();
-      //     if(v.length == 0)
-      //     {
-      //         document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
-      //         return false;
-      //     }
-      //     else
-      //     {
-      //         document.getElementById('captcha').innerHTML="Captcha completed";
-      //         return true; 
-      //     }
-      // }
+      function get_action(form) 
+      {
+          var v = grecaptcha.getResponse();
+          if(v.length == 0)
+          {
+              alert('Error in Google reCAPTCHA');
+              return false;
+          }
+          else
+          {
+              alert('Google reCAPTCHA is verified');
+              return true; 
+          }
+      }
     </script>
   </body>
 </html>
