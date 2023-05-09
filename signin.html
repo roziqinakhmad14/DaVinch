@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="assets/style/signin_style.css">
     <!-- Google reCAPTCHA CDN -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function onLoadCallBack() {
-        grecaptcha.render('rcaptcha', {
-          sitekey: '6LdPOPQlAAAAAIBcOpZCokI3r0PdIbZYcMNonPuy',
-          callback: successCallback,
-        }) 
-      }
-    </script>
   </head>
   <body>
     <header>
@@ -40,8 +32,7 @@
             </tr>
             <tr>
               <th colspan="3">
-                <div class="g-recaptcha" id="rcaptcha" style="margin: 0 auto; display: inline-block;"></div>
-                <span id="captcha" style="margin-left:100px;color:red"></span>
+                <div class="g-recaptcha" id="rcaptcha" data-sitekey="6LdPOPQlAAAAAIBcOpZCokI3r0PdIbZYcMNonPuy"></div>
               </th>
             </tr>
           </table>
@@ -56,9 +47,20 @@
     </footer>
     <script src="assets/js/signin.js"></script>
     <script>
-      function successCallback(token) {
-        debugger;
-      }
+      // function get_action(form) 
+      // {
+      //     var v = grecaptcha.getResponse();
+      //     if(v.length == 0)
+      //     {
+      //         document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+      //         return false;
+      //     }
+      //     else
+      //     {
+      //         document.getElementById('captcha').innerHTML="Captcha completed";
+      //         return true; 
+      //     }
+      // }
     </script>
   </body>
 </html>
